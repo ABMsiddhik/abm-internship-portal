@@ -170,7 +170,7 @@
     <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
       <div class="pt-2 pb-3 space-y-1">
         <a href="#home"
-          class="bg-blue-50 text-primary block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium">Home</a>
+          class="bg-blue-50 text-primary block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium" onclick="closeMobileMenu()">Home</a>
 
         <!-- Mobile Internships Expandable Section -->
         <div x-data="{ open: false }">
@@ -180,40 +180,40 @@
             <i class="fas" :class="open ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
           </button>
           <div x-show="open" class="pl-6 space-y-2">
-            <a href="#web-development" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#web-development" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-code mr-2 text-primary"></i> Web Development
             </a>
-            <a href="#ai-ml" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#ai-ml" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()" >
               <i class="fas fa-brain mr-2 text-primary"></i> AI & ML
             </a>
-            <a href="#data-science" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#data-science" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-database mr-2 text-primary"></i> Data Science
             </a>
-            <a href="#data-analytics" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#data-analytics" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-chart-bar mr-2 text-primary"></i> Data Analytics
             </a>
-            <a href="#digital-marketing" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#digital-marketing" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-bullhorn mr-2 text-primary"></i> Digital Marketing
             </a>
-            <a href="#app-development" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#app-development" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-mobile-alt mr-2 text-primary"></i> App Development
             </a>
-            <a href="#ui-ux" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#ui-ux" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-pencil-ruler mr-2 text-primary"></i> UI/UX Design
             </a>
-            <a href="#design" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#design" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-paint-brush mr-2 text-primary"></i> Photoshop/Design
             </a>
-            <a href="#cybersecurity" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#cybersecurity" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-shield-alt mr-2 text-primary"></i> Cybersecurity
             </a>
-            <a href="#it-support" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#it-support" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-network-wired mr-2 text-primary"></i> IT Support
             </a>
-            <a href="#iot" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#iot" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-wifi mr-2 text-primary"></i> IoT Development
             </a>
-            <a href="#time-management" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm">
+            <a href="#time-management" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-clock mr-2 text-primary"></i> Time Management
             </a>
           </div>
@@ -221,11 +221,11 @@
 
         <a href="#certification"
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
-          <i class="fas fa-certificate mr-2 text-primary"></i> Certification
+           Certification
         </a>
         <a href="#reviews"
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
-          <i class="fas fa-star mr-2 text-primary"></i> Reviews
+          Reviews
         </a>
         <a href="#about"
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">About

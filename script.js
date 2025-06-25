@@ -3,7 +3,11 @@
   document.getElementById('mobile-menu-button').addEventListener('click', function() {
     document.getElementById('mobile-menu').classList.toggle('hidden');
   });
-
+  // closing menu on mobile res
+function closeMobileMenu() {
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenu.classList.add('hidden');
+}
   // Modal functions
   function showModal(id) {
     const modal = document.getElementById(id);
