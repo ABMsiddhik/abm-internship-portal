@@ -75,7 +75,9 @@
           <div class="hidden md:ml-10 md:flex md:space-x-8">
             <a href="#home"
               class="text-primary border-primary inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
-
+             <a href="#about" 
+              class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About
+              </a>
             <!-- Internships Dropdown -->
             <div class="relative group">
               <button
@@ -142,9 +144,9 @@
               class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">
               Reviews
             </a>
-            <a href="#about"
-              class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About
-              Us</a>
+           <a href="#contact"
+              class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Contact
+              </a>
           </div>
         </div>
 
@@ -171,7 +173,9 @@
       <div class="pt-2 pb-3 space-y-1">
         <a href="#home"
           class="bg-blue-50 text-primary block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium" onclick="closeMobileMenu()">Home</a>
-
+        <a href="#about"
+          class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">About
+          </a>
         <!-- Mobile Internships Expandable Section -->
         <div x-data="{ open: false }">
           <button @click="open = !open"
@@ -227,9 +231,9 @@
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
           Reviews
         </a>
-        <a href="#about"
-          class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">About
-          Us</a>
+        
+ <a href="#contact"
+          class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">Contact</a>
 
         <div class="border-t border-gray-200 pt-4 pb-3">
           <div class="flex items-center px-4">
@@ -353,6 +357,63 @@
                 <span>Flexible remote/onsite options</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us Section -->
+  <section id="about" class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="ABM IT SUPPORT Team" class="rounded-xl shadow-lg w-full h-auto">
+        </div>
+        <div class="w-full md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">About <span class="text-primary">ABM IT SUPPORT</span></h2>
+          <p class="text-lg text-gray-600 mb-6">
+            We're a leading IT support and training company committed to bridging the gap between education and industry
+            requirements.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-primary/10 text-primary p-2 rounded-lg mr-4">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Our Mission</h4>
+                <p class="text-gray-600">
+                  To empower the next generation of tech professionals through practical, hands-on training and
+                  real-world experience.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary/10 text-primary p-2 rounded-lg mr-4">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Our Impact</h4>
+                <p class="text-gray-600">
+                  Over 1,000 students trained with 85% securing jobs in their field within 3 months of completing our
+                  programs.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary/10 text-primary p-2 rounded-lg mr-4">
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Our Team</h4>
+                <p class="text-gray-600">
+                  Industry veterans with 10+ years experience in IT, cybersecurity, web development, and digital
+                  marketing.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2072,63 +2133,6 @@
 </script>
 
 
-  <!-- About Us Section -->
-  <section id="about" class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center gap-12">
-        <div class="w-full md:w-1/2">
-          <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            alt="ABM IT SUPPORT Team" class="rounded-xl shadow-lg w-full h-auto">
-        </div>
-        <div class="w-full md:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">About <span class="text-primary">ABM IT SUPPORT</span></h2>
-          <p class="text-lg text-gray-600 mb-6">
-            We're a leading IT support and training company committed to bridging the gap between education and industry
-            requirements.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <div class="bg-primary/10 text-primary p-2 rounded-lg mr-4">
-                <i class="fas fa-bullseye"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900">Our Mission</h4>
-                <p class="text-gray-600">
-                  To empower the next generation of tech professionals through practical, hands-on training and
-                  real-world experience.
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-primary/10 text-primary p-2 rounded-lg mr-4">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900">Our Impact</h4>
-                <p class="text-gray-600">
-                  Over 1,000 students trained with 85% securing jobs in their field within 3 months of completing our
-                  programs.
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-primary/10 text-primary p-2 rounded-lg mr-4">
-                <i class="fas fa-users"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900">Our Team</h4>
-                <p class="text-gray-600">
-                  Industry veterans with 10+ years experience in IT, cybersecurity, web development, and digital
-                  marketing.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Student Resources Section -->
   <section id="student-resources" class="py-16">
