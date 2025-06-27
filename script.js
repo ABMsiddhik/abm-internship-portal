@@ -1,135 +1,138 @@
- 
-  // Mobile menu toggle
-  document.getElementById('mobile-menu-button').addEventListener('click', function() {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileMenuButton && mobileMenu) {
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
-  // closing menu on mobile res
-function closeMobileMenu() {
-  const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.add('hidden');
 }
-  // Modal functions
-  function showModal(id) {
-    const modal = document.getElementById(id);
+
+// Close mobile menu
+function closeMobileMenu() {
+  if (mobileMenu) {
+    mobileMenu.classList.add('hidden');
+  }
+}
+
+// Modal functions
+function showModal(id, hideOther = null) {
+  const modal = document.getElementById(id);
+  if (modal) {
     modal.classList.remove('hidden');
     modal.classList.add('show');
     document.body.style.overflow = 'hidden';
+    if (hideOther) {
+      hideModal(hideOther);
+    }
   }
+}
 
-  function hideModal(id) {
-    const modal = document.getElementById(id);
+function hideModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
     modal.classList.add('hidden');
     modal.classList.remove('show');
     document.body.style.overflow = '';
   }
-
-  // Close modals when clicking outside
-  document.querySelectorAll('.modal').forEach(modal => {
-    modal.addEventListener('click', function(e) {
-      if (e.target === this) {
-        hideModal(this.id);
-      }
-    });
-  });
-
-  // View details functionality
-  document.querySelectorAll('.view-details').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = this.getAttribute('href').substring(1);
-      showModal(target);
-    });
-  });
-// Modify your showModal function to accept a second parameter for modal to hide
-function showModal(id, hideOther = null) {
-    const modal = document.getElementById(id);
-    modal.classList.remove('hidden');
-    modal.classList.add('show');
-    document.body.style.overflow = 'hidden';
-    
-    // Hide another modal if specified
-    if (hideOther) {
-        hideModal(hideOther);
-    }
 }
 
-
-
-
-  // Back to top button
-  const backToTopButton = document.getElementById('back-to-top');
-  
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 300) {
-      backToTopButton.classList.add('visible');
-    } else {
-      backToTopButton.classList.remove('visible');
+// Close modals when clicking outside
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      hideModal(modal.id);
     }
   });
-  
-  backToTopButton.addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
+});
 
-  
-
-  // Search functionality
-  document.getElementById('internship-search').addEventListener('input', function() {
-    const searchTerm = this.value.toLowerCase();
-    const cards = document.querySelectorAll('.internship-card');
-    
-    cards.forEach(card => {
-      const title = card.querySelector('h3').textContent.toLowerCase();
-      const description = card.querySelector('p').textContent.toLowerCase();
-      
-      if (title.includes(searchTerm) || description.includes(searchTerm)) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
-
-
-  // Handle form submission
-  document.getElementById('application-form').addEventListener('submit', function(e) {
+// View details functionality
+document.querySelectorAll('.view-details').forEach(link => {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('applicant-name').value;
-    const email = document.getElementById('applicant-email').value;
-    const phone = document.getElementById('applicant-phone').value;
-    const program = document.getElementById('internship-program').value;
-    const message = document.getElementById('applicant-message').value;
-    
-    // Create WhatsApp message
-    const whatsappMessage = `New Application for Intern:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProgram: ${program}\nMessage: ${message}`;
-    
-    // Encode the message for URL
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    
-    // Replace with your WhatsApp number (with country code, remove +)
-    const whatsappNumber = '918012626222'; // Example: 91 for India, followed by number
-    
-    // Open WhatsApp with the message
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
-    
-    // Hide the modal
-    hideModal('apply-now');
-    
-    // Reset form
-    this.reset();
-    
-    // Show success message (optional)
-    alert('Your application has been submitted! We will contact you soon.');
+    const target = link.getAttribute('href')?.substring(1);
+    if (target) {
+      showModal(target);
+    }
   });
+});
 
-  // <!-- Swiper Initialization -->
+// Track switching functionality
+function showTrack(trackName) {
+  document.querySelectorAll('.track-content').forEach(content => {
+    content.classList.add('hidden');
+  });
+  const trackContent = document.getElementById(`${trackName}-track`);
+  if (trackContent) {
+    trackContent.classList.remove('hidden');
+  }
+  document.querySelectorAll('.track-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.dataset.track === trackName) {
+      btn.classList.add('active');
+    }
+  });
+}
 
-  var swiper = new Swiper(".reviewSwiper", {
+// Initialize with frontend track visible
+document.addEventListener('DOMContentLoaded', () => {
+  const frontendTrack = document.getElementById('frontend-track');
+  if (frontendTrack) {
+    frontendTrack.classList.remove('hidden');
+  }
+});
+
+// Back to top button
+const backToTopButton = document.getElementById('back-to-top');
+if (backToTopButton) {
+  window.addEventListener('scroll', () => {
+    backToTopButton.classList.toggle('visible', window.pageYOffset > 300);
+  });
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// Search functionality
+const internshipSearch = document.getElementById('internship-search');
+if (internshipSearch) {
+  internshipSearch.addEventListener('input', () => {
+    const searchTerm = internshipSearch.value.toLowerCase();
+    document.querySelectorAll('.internship-card').forEach(card => {
+      const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+      const description = card.querySelector('p')?.textContent.toLowerCase() || '';
+      card.style.display = title.includes(searchTerm) || description.includes(searchTerm) ? 'block' : 'none';
+    });
+  });
+}
+
+// Handle form submission
+const applicationForm = document.getElementById('application-form');
+if (applicationForm) {
+  applicationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('applicant-name')?.value;
+    const email = document.getElementById('applicant-email')?.value;
+    const phone = document.getElementById('applicant-phone')?.value;
+    const program = document.getElementById('internship-program')?.value;
+    const message = document.getElementById('applicant-message')?.value;
+
+    if (name && email && phone && program) {
+      const whatsappMessage = `New Application for Intern:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProgram: ${program}\nMessage: ${message || 'N/A'}`;
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappNumber = '918012626222';
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+      hideModal('apply-now');
+      applicationForm.reset();
+      alert('Your application has been submitted! We will contact you soon.');
+    } else {
+      alert('Please fill out all required fields.');
+    }
+  });
+}
+
+// Swiper Initialization
+if (typeof Swiper !== 'undefined') {
+  new Swiper('.reviewSwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -138,25 +141,28 @@ function showModal(id, hideOther = null) {
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       640: {
         slidesPerView: 1.5,
-        centeredSlides: true
+        centeredSlides: true,
       },
       768: {
         slidesPerView: 2,
-        centeredSlides: false
+        centeredSlides: false,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30
-      }
-    }
+        spaceBetween: 30,
+      },
+    },
   });
+} else {
+  console.warn('Swiper library is not loaded.');
+}
