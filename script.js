@@ -55,6 +55,28 @@ document.querySelectorAll('.view-details').forEach(link => {
     }
   });
 });
+//view highlights functionality
+const button = document.getElementById('viewAllBtn');
+
+button.addEventListener('click', function () {
+  // Get all elements with the 'hidden-more' class
+  const hiddenItems = document.querySelectorAll('.hidden-more');
+
+  // Toggle visibility for each item
+  hiddenItems.forEach(item => {
+    item.classList.toggle('show-more');
+  });
+
+  // Change button text based on current text
+  if (button.textContent === 'Show Less') {
+    button.textContent = 'Show More';
+  } else {
+    button.textContent = 'Show Less';
+  }
+});
+
+
+
 
 // Track switching functionality
 function showTrack(trackName) {

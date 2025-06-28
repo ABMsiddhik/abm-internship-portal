@@ -40,6 +40,13 @@
       transform: translateY(20px);
       opacity: 0;
     }
+      .hidden-more {
+    display: none;
+  }
+  
+  .show-more {
+    display: block !important;
+  }
   </style>
   <script>
     tailwind.config = {
@@ -239,7 +246,7 @@
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
           Certification
         </a>
-           <a href="highlights"
+           <a href="#highlights"
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
           Highlights
         </a>
@@ -2689,7 +2696,7 @@
   
 
 
-   <!-- Highlights Gallery Section -->
+<!-- Highlights Gallery Section -->
 <section id="highlights" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
@@ -2700,75 +2707,96 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Gallery Item 1 -->
+      <!-- Visible Gallery Items (first 6) -->
       <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <img src="images/highlight1.jpeg" alt="Intern Introduction" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-  
       </div>
 
-      <!-- Gallery Item 2 -->
       <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <img src="images/highlight2.jpeg" alt="Team Orientation" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-       
       </div>
 
-      <!-- Gallery Item 3 -->
       <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <img src="images/highlight3.jpeg" alt="Workshop Session" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-     
       </div>
 
-      <!-- Gallery Item 4 -->
       <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <img src="images/highlight4.jpeg" alt="Group Presentation" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-       
       </div>
 
-      <!-- Gallery Item 5 -->
       <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <img src="images/highlight5.jpeg" alt="Project Brainstorming" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-     
       </div>
 
-      <!-- Gallery Item 6 -->
       <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <img src="images/highlight6.jpeg" alt="Interactive Q&A" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-       
       </div>
 
-      <!-- Gallery Item 7 -->
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <!-- Hidden Gallery Items (initially hidden) -->
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
         <img src="images/highlight7.jpeg" alt="Certificate Ceremony" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      
       </div>
 
-      <!-- Gallery Item 8 -->
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
         <img src="images/highlight8.jpeg" alt="Celebration Moment" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-    
       </div>
 
-      <!-- Gallery Item 9 -->
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
         <img src="images/highlight9.jpeg" alt="Internship Wrap-Up" 
              class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-     
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight10.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight11.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight12.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight13.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight14.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight15.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+        <img src="images/highlight16.jpeg" alt="Internship Wrap-Up" 
+             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
       </div>
     </div>
 
-
+     <div class="text-center my-8">
+      <button id="viewAllBtn"  class="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition duration-300">
+        Show More
+      </button>
+    </div>
   </div>
-</section>
-
- 
+ </section>
 
   <!-- Reviews Section with Enhanced Slider -->
   <section id="reviews" class="py-16 bg-gradient-to-b from-gray-50 to-white">
@@ -3161,6 +3189,7 @@
             <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
             <li><a href="#internships" class="text-gray-400 hover:text-white">Internships</a></li>
             <li><a href="#certification" class="text-gray-400 hover:text-white">Certification</a></li>
+            <li><a href="#highlights" class="text-gray-400 hover:text-white">Highlights</a></li>
             <li><a href="#reviews" class="text-gray-400 hover:text-white">Reviews</a></li>
             <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
           </ul>
