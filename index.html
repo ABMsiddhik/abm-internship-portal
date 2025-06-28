@@ -40,13 +40,14 @@
       transform: translateY(20px);
       opacity: 0;
     }
-      .hidden-more {
-    display: none;
-  }
-  
-  .show-more {
-    display: block !important;
-  }
+
+    .hidden-more {
+      display: none;
+    }
+
+    .show-more {
+      display: block !important;
+    }
   </style>
   <script>
     tailwind.config = {
@@ -136,9 +137,9 @@
                     <i class="fas fa-wifi mr-2 text-primary"></i> IoT Development
                   </a>
                   <a href="#personal-development"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                  <i class="fas fa-user-clock mr-2 text-primary"></i> Personal Development & Time Management
-                </a>
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                    <i class="fas fa-user-clock mr-2 text-primary"></i> Personal Development & Time Management
+                  </a>
                 </div>
               </div>
             </div>
@@ -147,9 +148,9 @@
               class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">
               Certification
             </a>
-               <a href="#highlights"
+            <a href="#highlights"
               class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">
-             Highlights
+              Highlights
             </a>
             <a href="#reviews"
               class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">
@@ -235,10 +236,10 @@
             <a href="#iot" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm" onclick="closeMobileMenu()">
               <i class="fas fa-wifi mr-2 text-primary"></i> IoT Development
             </a>
-           <a href="#personal-development" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm"
-            onclick="closeMobileMenu()">
-            <i class="fas fa-user-clock mr-2 text-primary"></i> Personal Development & Time Management
-          </a>
+            <a href="#personal-development" class="block text-gray-600 hover:bg-gray-50 py-2 text-sm"
+              onclick="closeMobileMenu()">
+              <i class="fas fa-user-clock mr-2 text-primary"></i> Personal Development & Time Management
+            </a>
           </div>
         </div>
 
@@ -246,7 +247,7 @@
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
           Certification
         </a>
-           <a href="#highlights"
+        <a href="#highlights"
           class="text-gray-600 hover:bg-gray-50 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium">
           Highlights
         </a>
@@ -444,304 +445,282 @@
     </div>
   </section>
 
-  <!-- Internships Section -->
-  <section id="internships" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Featured <span class="text-primary">Internship</span>
-        Programs</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Browse our most popular internship opportunities for tech enthusiasts
-      </p>
-    </div>
-    <div class="max-w-md mx-auto mb-12">
-      <div class="relative">
-        <input type="text" id="internship-search" placeholder="Search internships..."
-          class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300">
-        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <i class="fas fa-search text-gray-400"></i>
-        </div>
-      </div>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Frontend Development -->
-      <div id="web-development" 
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
-          <i class="fas fa-laptop-code text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Frontend Development</h3>
-          <p class="text-gray-600 mb-4">Create stunning, user-friendly interfaces using modern frontend technologies.
-          </p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-blue-600">Flexible Duration</span>
-            <a href="#frontend-development-details"
-              class="text-sm font-medium text-blue-600 hover:text-blue-800 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Backend Development -->
-      <div id="web-development"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center">
-          <i class="fas fa-server text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Backend Development</h3>
-          <p class="text-gray-600 mb-4">Develop robust server-side applications and APIs using modern backend
-            technologies.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-green-600">Flexible Duration</span>
-            <a href="#backend-development-details"
-              class="text-sm font-medium text-green-600 hover:text-green-800 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Database Development -->
-      <div id="web-development"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center">
-          <i class="fas fa-database text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Database Development</h3>
-          <p class="text-gray-600 mb-4">Design and manage efficient databases for modern applications.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-purple-600">Flexible Duration</span>
-            <a href="#database-development-details"
-              class="text-sm font-medium text-purple-600 hover:text-purple-800 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Full-stack Development -->
-<div id="web-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-  <div class="h-48 bg-gradient-to-r from-indigo-600 to-indigo-400 flex items-center justify-center">
-    <i class="fas fa-code-branch text-white text-6xl"></i>
+<!-- Internships Section -->
+<section id="internships" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Featured <span class="text-primary">Internship</span> Programs</h2>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Browse our most popular internship opportunities for tech enthusiasts
+    </p>
   </div>
-  <div class="p-6">
-    <h3 class="text-xl font-bold text-gray-900 mb-2">Full Stack Development</h3>
-    <p class="text-gray-600 mb-4">Master both frontend and backend technologies to build complete web applications.</p>
-    <div class="flex justify-between items-center">
-      <span class="text-sm font-medium text-indigo-600">Flexible Duration</span>
-      <a href="#full-stack-development-details" class="text-sm font-medium text-indigo-600 hover:text-indigo-800 view-details">
-        View Details <i class="fas fa-arrow-right ml-1"></i>
-      </a>
+  
+  <div class="max-w-md mx-auto mb-12">
+    <div class="relative">
+      <input type="text" id="internship-search" placeholder="Search internships..."
+        class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300">
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+        <i class="fas fa-search text-gray-400"></i>
+      </div>
     </div>
   </div>
-</div>
-      <!-- AI & ML -->
-      <div id="ai-ml"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-secondary to-orange-400 flex items-center justify-center">
-          <i class="fas fa-brain text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">AI & Machine Learning</h3>
-          <p class="text-gray-600 mb-4">Work on cutting-edge AI projects and machine learning models.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#ai-ml-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Frontend Development -->
+    <div id="web-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/frontend.jpeg" alt="Frontend Development" class="h-full w-full object-cover">
       </div>
-
-      <!-- Digital Marketing -->
-      <div id="digital-marketing"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-300 flex items-center justify-center">
-          <i class="fas fa-bullhorn text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Marketing</h3>
-          <p class="text-gray-600 mb-4">Learn SEO, social media marketing, and digital advertising strategies.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#digital-marketing-details"
-              class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- App Development -->
-      <div id="app-development"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-green-500 to-green-300 flex items-center justify-center">
-          <i class="fas fa-mobile-alt text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">App Development</h3>
-          <p class="text-gray-600 mb-4">Develop mobile applications for iOS and Android platforms.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#app-development-details"
-              class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Design -->
-      <div id="design"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-pink-500 to-pink-300 flex items-center justify-center">
-          <i class="fas fa-paint-brush text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Photoshop/Design</h3>
-          <p class="text-gray-600 mb-4">Create stunning visuals and user interfaces for digital products.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#design-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cybersecurity -->
-      <div id="cybersecurity"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-red-500 to-red-300 flex items-center justify-center">
-          <i class="fas fa-shield-alt text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Cybersecurity</h3>
-          <p class="text-gray-600 mb-4">Learn to protect systems and networks from digital attacks.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#cybersecurity-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- IT Support -->
-      <div id="it-support"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-center">
-          <i class="fas fa-network-wired text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">IT Support</h3>
-          <p class="text-gray-600 mb-4">Provide technical assistance and troubleshoot hardware/software issues.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#it-support-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Personal Development & Time Management -->
-      <div id="personal-development"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-yellow-500 to-yellow-300 flex items-center justify-center">
-          <i class="fas fa-user-clock text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Development & Time Management</h3>
-          <p class="text-gray-600 mb-4">Master productivity techniques and personal growth strategies.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#personal-development-details"
-              class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Science -->
-      <div id="data-science"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-indigo-500 to-indigo-300 flex items-center justify-center">
-          <i class="fas fa-database text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Data Science</h3>
-          <p class="text-gray-600 mb-4">Work with large datasets, build predictive models, and extract valuable
-            insights.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#data-science-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Analytics -->
-      <div id="data-analytics"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-teal-500 to-teal-300 flex items-center justify-center">
-          <i class="fas fa-chart-bar text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Data Analytics</h3>
-          <p class="text-gray-600 mb-4">Analyze business data, create visualizations, and drive data-informed decisions.
-          </p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#data-analytics-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- UI/UX Design -->
-      <div id="ui-ux"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-fuchsia-500 to-fuchsia-300 flex items-center justify-center">
-          <i class="fas fa-pencil-ruler text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">UI/UX Design</h3>
-          <p class="text-gray-600 mb-4">Design intuitive user interfaces and create seamless user experiences.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#ui-ux-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- IoT (Internet of Things) -->
-      <div id="iot"
-        class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-amber-500 to-amber-300 flex items-center justify-center">
-          <i class="fas fa-wifi text-white text-6xl"></i>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">IoT Development</h3>
-          <p class="text-gray-600 mb-4">Build connected devices and smart systems for the Internet of Things.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-primary">Flexible Duration</span>
-            <a href="#iot-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
-              View Details <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-          </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Frontend Development</h3>
+        <p class="text-gray-600 mb-4">Create stunning, user-friendly interfaces using modern frontend technologies.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#frontend-development-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
         </div>
       </div>
     </div>
-  </section>
 
+    <!-- Backend Development -->
+    <div id="web-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/backend.webp" alt="Backend Development" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Backend Development</h3>
+        <p class="text-gray-600 mb-4">Develop robust server-side applications and APIs using modern backend technologies.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#backend-development-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Database Development -->
+    <div id="web-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/Database.jpeg" alt="Database Development" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Database Development</h3>
+        <p class="text-gray-600 mb-4">Design and manage efficient databases for modern applications.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#database-development-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-stack Development -->
+    <div id="web-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/fullstack.webp" alt="Full Stack Development" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Full Stack Development</h3>
+        <p class="text-gray-600 mb-4">Master both frontend and backend technologies to build complete web applications.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#full-stack-development-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI & ML -->
+    <div id="ai-ml" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/ai&ml.jpg" alt="AI & Machine Learning" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">AI & Machine Learning</h3>
+        <p class="text-gray-600 mb-4">Work on cutting-edge AI projects and machine learning models.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#ai-ml-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Digital Marketing -->
+    <div id="digital-marketing" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/DigitalMarketing.jpg" alt="Digital Marketing" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Marketing</h3>
+        <p class="text-gray-600 mb-4">Learn SEO, social media marketing, and digital advertising strategies.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#digital-marketing-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Development -->
+    <div id="app-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/appDevelopment.avif" alt="App Development" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">App Development</h3>
+        <p class="text-gray-600 mb-4">Develop mobile applications for iOS and Android platforms.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#app-development-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design -->
+    <div id="design" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/ps.jpg" alt="Photoshop/Design" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Photoshop/Design</h3>
+        <p class="text-gray-600 mb-4">Create stunning visuals and user interfaces for digital products.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#design-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div id="cybersecurity" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/cybersecurity.jpg" alt="Cybersecurity" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Cybersecurity</h3>
+        <p class="text-gray-600 mb-4">Learn to protect systems and networks from digital attacks.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#cybersecurity-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IT Support -->
+    <div id="it-support" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/ITsupport.jpg" alt="IT Support" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">IT Support</h3>
+        <p class="text-gray-600 mb-4">Provide technical assistance and troubleshoot hardware/software issues.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#it-support-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal Development & Time Management -->
+    <div id="personal-development" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/personal&time.jpeg" alt="Personal Development & Time Management" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Development & Time Management</h3>
+        <p class="text-gray-600 mb-4">Master productivity techniques and personal growth strategies.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#personal-development-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Science -->
+    <div id="data-science" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/DataScience.jpg" alt="Data Science" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Science</h3>
+        <p class="text-gray-600 mb-4">Work with large datasets, build predictive models, and extract valuable insights.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#data-science-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Analytics -->
+    <div id="data-analytics" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/dataAnalytics.jpeg" alt="Data Analytics" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Analytics</h3>
+        <p class="text-gray-600 mb-4">Analyze business data, create visualizations, and drive data-informed decisions.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#data-analytics-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- UI/UX Design -->
+    <div id="ui-ux" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/uiux.jpg" alt="UI/UX Design" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">UI/UX Design</h3>
+        <p class="text-gray-600 mb-4">Design intuitive user interfaces and create seamless user experiences.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#ui-ux-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IoT (Internet of Things) -->
+    <div id="iot" class="internship-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+      <div class="h-48 flex items-center justify-center bg-white">
+        <img src="images/IoT.avif" alt="IoT Development" class="h-full w-full object-cover">
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">IoT Development</h3>
+        <p class="text-gray-600 mb-4">Build connected devices and smart systems for the Internet of Things.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm font-medium text-primary">Flexible Duration</span>
+          <a href="#iot-details" class="text-sm font-medium text-primary hover:text-blue-700 view-details">
+            View Details <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Internship Detail Modals -->
 
   <!-- Frontend Development Details -->
@@ -1115,125 +1094,129 @@
       </div>
     </div>
   </div>
-<!-- Full-Stack Development Details -->
- <div id="full-stack-development-details" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden">
-  <div class="modal-content bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-    <div class="p-6">
-      <div class="flex justify-between items-start mb-6">
-        <div>
-          <h3 class="text-2xl font-bold text-gray-900">Full Stack Development Internship</h3>
-          <p class="text-indigo-600 font-medium">Flexible Duration</p>
+  <!-- Full-Stack Development Details -->
+  <div id="full-stack-development-details"
+    class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden">
+    <div class="modal-content bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900">Full Stack Development Internship</h3>
+            <p class="text-indigo-600 font-medium">Flexible Duration</p>
+          </div>
+          <button onclick="hideModal('full-stack-development-details')" class="text-gray-500 hover:text-gray-700 p-2">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-        <button onclick="hideModal('full-stack-development-details')" class="text-gray-500 hover:text-gray-700 p-2">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h4 class="text-lg font-semibold mb-3">Program Highlights</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
-              <span>Learn complete web development from frontend to backend</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
-              <span>Build responsive UIs with React/Vue and backend APIs with Node.js</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
-              <span>Work with databases (SQL & NoSQL) and authentication systems</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
-              <span>Deploy full stack applications to cloud platforms</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
-              <span>Implement CI/CD pipelines for automated deployment</span>
-            </li>
-          </ul>
-          <h4 class="text-lg font-semibold mb-3 mt-6">Requirements</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-2"></i>
-              <span>Basic understanding of programming concepts</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-2"></i>
-              <span>Familiarity with HTML/CSS/JavaScript is a plus</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-2"></i>
-              <span>Own laptop for development</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold mb-3">Program Details</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li class="flex items-start">
-              <i class="fas fa-calendar-day text-indigo-600 mt-1 mr-2"></i>
-              <span><strong>Duration Options:</strong> 3 days, 7 days, 15 days, 30 days, or long-term (3-6 months)</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-clock text-indigo-600 mt-1 mr-2"></i>
-              <span><strong>Timing:</strong> 1.5 hours per day</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-rupee-sign text-indigo-600 mt-1 mr-2"></i>
-              <span><strong>Fees:</strong>
-                <ul class="ml-4 mt-1">
-                  <li>3 days - ₹1600</li>
-                  <li>7 days - ₹1900</li>
-                  <li>15 days - ₹2600</li>
-                  <li>30 days - ₹4600</li>
-                </ul>
-              </span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-certificate text-indigo-600 mt-1 mr-2"></i>
-              <span><strong>Includes:</strong> Certificate & Report Documents</span>
-            </li>
-          </ul>
-          <div class="mt-6 p-4 bg-indigo-50 rounded-lg">
-            <h4 class="text-lg font-semibold mb-2">Group Enrollment</h4>
-            <p class="text-gray-700">Fees reduced for groups based on number of students for all durations</p>
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-3">Program Highlights</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
+                <span>Learn complete web development from frontend to backend</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
+                <span>Build responsive UIs with React/Vue and backend APIs with Node.js</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
+                <span>Work with databases (SQL & NoSQL) and authentication systems</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
+                <span>Deploy full stack applications to cloud platforms</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-indigo-600 mt-1 mr-2"></i>
+                <span>Implement CI/CD pipelines for automated deployment</span>
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold mb-3 mt-6">Requirements</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check text-indigo-600 mt-1 mr-2"></i>
+                <span>Basic understanding of programming concepts</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-indigo-600 mt-1 mr-2"></i>
+                <span>Familiarity with HTML/CSS/JavaScript is a plus</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-indigo-600 mt-1 mr-2"></i>
+                <span>Own laptop for development</span>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="mb-8">
-        <h4 class="text-lg font-semibold mb-3">What You'll Learn</h4>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-gray-100 p-3 rounded-lg text-center">
-            <i class="fab fa-react text-indigo-600 text-2xl mb-2"></i>
-            <p class="text-sm font-medium">Frontend Frameworks</p>
-          </div>
-          <div class="bg-gray-100 p-3 rounded-lg text-center">
-            <i class="fas fa-server text-indigo-600 text-2xl mb-2"></i>
-            <p class="text-sm font-medium">Backend Development</p>
-          </div>
-          <div class="bg-gray-100 p-3 rounded-lg text-center">
-            <i class="fas fa-database text-indigo-600 text-2xl mb-2"></i>
-            <p class="text-sm font-medium">Database Management</p>
-          </div>
-          <div class="bg-gray-100 p-3 rounded-lg text-center">
-            <i class="fas fa-cloud text-indigo-600 text-2xl mb-2"></i>
-            <p class="text-sm font-medium">Cloud Deployment</p>
+          <div>
+            <h4 class="text-lg font-semibold mb-3">Program Details</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-calendar-day text-indigo-600 mt-1 mr-2"></i>
+                <span><strong>Duration Options:</strong> 3 days, 7 days, 15 days, 30 days, or long-term (3-6
+                  months)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-clock text-indigo-600 mt-1 mr-2"></i>
+                <span><strong>Timing:</strong> 1.5 hours per day</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-rupee-sign text-indigo-600 mt-1 mr-2"></i>
+                <span><strong>Fees:</strong>
+                  <ul class="ml-4 mt-1">
+                    <li>3 days - ₹1600</li>
+                    <li>7 days - ₹1900</li>
+                    <li>15 days - ₹2600</li>
+                    <li>30 days - ₹4600</li>
+                  </ul>
+                </span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-certificate text-indigo-600 mt-1 mr-2"></i>
+                <span><strong>Includes:</strong> Certificate & Report Documents</span>
+              </li>
+            </ul>
+            <div class="mt-6 p-4 bg-indigo-50 rounded-lg">
+              <h4 class="text-lg font-semibold mb-2">Group Enrollment</h4>
+              <p class="text-gray-700">Fees reduced for groups based on number of students for all durations</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a onclick="hideModal('full-stack-development-details'); showModal('apply-now', 'full-stack-development-details')" class="bg-indigo-600 hover:bg-indigo-800 text-white px-6 py-3 rounded-lg font-medium text-center transition duration-300">
-          Apply Now
-        </a>
-        <button onclick="hideModal('full-stack-development-details')" class="border border-gray-300 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium text-center transition duration-300">
-          Close
-        </button>
+        <div class="mb-8">
+          <h4 class="text-lg font-semibold mb-3">What You'll Learn</h4>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-gray-100 p-3 rounded-lg text-center">
+              <i class="fab fa-react text-indigo-600 text-2xl mb-2"></i>
+              <p class="text-sm font-medium">Frontend Frameworks</p>
+            </div>
+            <div class="bg-gray-100 p-3 rounded-lg text-center">
+              <i class="fas fa-server text-indigo-600 text-2xl mb-2"></i>
+              <p class="text-sm font-medium">Backend Development</p>
+            </div>
+            <div class="bg-gray-100 p-3 rounded-lg text-center">
+              <i class="fas fa-database text-indigo-600 text-2xl mb-2"></i>
+              <p class="text-sm font-medium">Database Management</p>
+            </div>
+            <div class="bg-gray-100 p-3 rounded-lg text-center">
+              <i class="fas fa-cloud text-indigo-600 text-2xl mb-2"></i>
+              <p class="text-sm font-medium">Cloud Deployment</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a onclick="hideModal('full-stack-development-details'); showModal('apply-now', 'full-stack-development-details')"
+            class="bg-indigo-600 hover:bg-indigo-800 text-white px-6 py-3 rounded-lg font-medium text-center transition duration-300">
+            Apply Now
+          </a>
+          <button onclick="hideModal('full-stack-development-details')"
+            class="border border-gray-300 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium text-center transition duration-300">
+            Close
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <!-- AI & ML Details -->
   <div id="ai-ml-details" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden">
     <div class="modal-content bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
@@ -2693,110 +2676,127 @@
       </div>
     </div>
   </section>
-  
 
 
-<!-- Highlights Gallery Section -->
-<section id="highlights" class="py-16 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Our <span class="text-primary">Highlights</span></h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Capturing memorable moments from our internship programs
-      </p>
+
+  <!-- Highlights Gallery Section -->
+  <section id="highlights" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Our <span class="text-primary">Highlights</span></h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Capturing memorable moments from our internship programs
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Visible Gallery Items (first 6) -->
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <img src="images/highlight1.jpeg" alt="Intern Introduction"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <img src="images/highlight2.jpeg" alt="Team Orientation"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <img src="images/highlight3.jpeg" alt="Workshop Session"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <img src="images/highlight4.jpeg" alt="Group Presentation"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <img src="images/highlight5.jpeg" alt="Project Brainstorming"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <img src="images/highlight6.jpeg" alt="Interactive Q&A"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <!-- Hidden Gallery Items (initially hidden) -->
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight7.jpeg" alt="Certificate Ceremony"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight8.jpeg" alt="Celebration Moment"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight9.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight10.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight11.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight12.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight13.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight14.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight15.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+
+        <div
+          class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
+          <img src="images/highlight16.jpeg" alt="Internship Wrap-Up"
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        </div>
+      </div>
+
+      <div class="text-center my-8">
+        <button id="viewAllBtn"
+          class="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition duration-300">
+          Show More
+        </button>
+      </div>
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Visible Gallery Items (first 6) -->
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img src="images/highlight1.jpeg" alt="Intern Introduction" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img src="images/highlight2.jpeg" alt="Team Orientation" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img src="images/highlight3.jpeg" alt="Workshop Session" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img src="images/highlight4.jpeg" alt="Group Presentation" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img src="images/highlight5.jpeg" alt="Project Brainstorming" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-        <img src="images/highlight6.jpeg" alt="Interactive Q&A" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <!-- Hidden Gallery Items (initially hidden) -->
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight7.jpeg" alt="Certificate Ceremony" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight8.jpeg" alt="Celebration Moment" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight9.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight10.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight11.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight12.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight13.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight14.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight15.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-
-      <div class="group relative aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300 hidden-more">
-        <img src="images/highlight16.jpeg" alt="Internship Wrap-Up" 
-             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-      </div>
-    </div>
-
-     <div class="text-center my-8">
-      <button id="viewAllBtn"  class="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition duration-300">
-        Show More
-      </button>
-    </div>
-  </div>
- </section>
+  </section>
 
   <!-- Reviews Section with Enhanced Slider -->
   <section id="reviews" class="py-16 bg-gradient-to-b from-gray-50 to-white">
