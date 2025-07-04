@@ -151,7 +151,43 @@ if (applicationForm) {
     }
   });
 }
-
+// Quote form submission
+  document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const location = document.getElementById('location').value;
+    const message = document.getElementById('message').value;
+    const requirements = Array.from(document.querySelectorAll('input[name="requirement"]:checked')).map(cb => cb.value);
+    
+    // Validation
+    if (!name || !email || !phone.match(/^[0-9]{10}$/) || !location || !message) {
+      alert('Please fill all required fields correctly. Phone number must be 10 digits.');
+      return;
+    }
+    
+    // Format WhatsApp message
+    let whatsappMessage = `*Quote Request - ABM IT SUPPORT*\n\n`;
+    whatsappMessage += `*Name:* ${name}\n`;
+    whatsappMessage += `*Email:* ${email}\n`;
+    whatsappMessage += `*Phone:* ${phone}\n`;
+    whatsappMessage += `*Location:* ${location}\n`;
+    
+    if (requirements.length > 0) {
+      whatsappMessage += `\n*Requirements:*\n${requirements.map(req => `• ${req}`).join('\n')}\n`;
+    }
+    
+    whatsappMessage += `\n*Message:*\n${message}`;
+    
+    // Encode for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Open WhatsApp
+    window.open(`https://wa.me/918012626111?text=${encodedMessage}`, '_blank');
+  });
 // Swiper Initialization
 if (typeof Swiper !== 'undefined') {
   new Swiper('.reviewSwiper', {

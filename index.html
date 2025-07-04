@@ -48,6 +48,60 @@
     .show-more {
       display: block !important;
     }
+ 
+#service-inquiry-btn {
+      z-index: 40; 
+      display: flex;
+      align-items: center;
+    }
+    
+    /* Map container responsive sizing */
+    .map-container {
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      .map-container {
+        height: 300px;
+      }
+    }
+    /* Form input focus styles */
+    .form-input:focus {
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    }
+    
+    /* Checkbox form styles */
+    .checkbox-container {
+      max-height: 300px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #3b82f6 #1e293b;
+    }
+    
+    .checkbox-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .checkbox-container::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+    
+    .checkbox-container::-webkit-scrollbar-thumb {
+      background-color: #3b82f6;
+      border-radius: 3px;
+    }
+    
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 8px;
+    }
+    
+    @media (max-width: 640px) {
+      .checkbox-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
   <script>
     tailwind.config = {
@@ -159,6 +213,7 @@
             <a href="#contact"
               class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Contact
             </a>
+            
           </div>
         </div>
 
@@ -3144,6 +3199,278 @@
     </div>
   </section>
 
+    <!-- Contact  Section -->
+  <section id="contact" class="bg-gradient-to-r from-primary to-blue-700 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+        We'd love to hear from you! Reach out for inquiries, support, or partnership opportunities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Quote Form -->
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Request a Quote</h2>
+          <form id="quoteForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Enter Your Name" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Enter Email" required>
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Enter Phone Number" pattern="[0-9]{10}" required>
+              </div>
+           <div>
+              <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Your Location</label>
+              <input type="text" id="location" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Enter Your Location" required>
+            </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Services Needed</label>
+              <div class="checkbox-container bg-gray-50 p-4 rounded-lg">
+                <div class="checkbox-grid">
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="WhatsApp Marketing" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>WhatsApp Marketing</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="WhatsApp API" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>WhatsApp API</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Auto Chatbot" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Auto Chatbot</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Voice Call Marketing with IVR" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Voice Call with IVR</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Auto Posting Software" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Auto Posting Software</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Bulk SMS API" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Bulk SMS API</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Data Extractor Software" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Data Extractor</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Static Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Static Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Dynamic Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Dynamic Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Portal Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Portal Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="E-Commerce Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>E-Commerce Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Logo Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Logo Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Banner Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Banner Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Flyer Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Flyer Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Ad Material Design" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Ad Material Design</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="WordPress Development" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>WordPress Development</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Android Development" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Android Development</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="iOS App Development" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>iOS App Development</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Software Development" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Software Development</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="SEO" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>SEO</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Google Ads" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Google Ads</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Social Media Marketing" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Social Media Marketing</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Facebook Marketing" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Facebook Marketing</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Bulk Email Marketing" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Bulk Email Marketing</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Blog Marketing" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Blog Marketing</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Voice Call" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Voice Call</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Databases" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Databases</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Internship" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Internship</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Courses" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Courses</span>
+                  </label>
+                  <label class="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded">
+                    <input type="checkbox" name="requirement" value="Job" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <span>Job</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Tell us more about your requirements..." rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+              <i class="fab fa-whatsapp mr-2 text-xl"></i> Submit via WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+                  <i class="fas fa-map-marker-alt text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Our Location</h3>
+                  <p class="text-gray-600">
+                    No 27, 2nd Floor, ARCT Complex,<br>
+                    Tamilnadu Papers Upstairs,<br>
+                    Sathiyamoorthy Road, Santhanathapuram,<br>
+                    Pudukkottai, Tamil Nadu 622001
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+                  <i class="fas fa-phone-alt text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Phone Numbers</h3>
+                  <p class="text-gray-600">
+                    Landline: 04339 220115<br>
+                    Mobile: 8012626111, 8012626222
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+                  <i class="fas fa-envelope text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Email Address</h3>
+                  <p class="text-gray-600">
+                    info@abmitsupport.com<br>
+                    support@abmitsupport.com
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+                  <i class="fas fa-clock text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Working Hours</h3>
+                  <p class="text-gray-600">
+                    Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                    Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Connect With Us</h3>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/abmitsupport" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/abmitsupport/" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/abmitsupport" class="bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition duration-300">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCRna7AnJdiUBva655IrdkZA" class="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition duration-300">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://wa.me/918012626111" class="bg-green-500 text-white p-3 rounded-full hover:bg-green-600 transition duration-300">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="mt-16 bg-white p-4 rounded-xl shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Our <span class="text-primary">Location</span></h2>
+        <div class="map-container rounded-lg overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.1260270901385!2d78.81371010509929!3d10.379146621020666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b007856bf6edc7f%3A0x10c22f7e8bd9a06!2sABM%20IT%20SUPPORT%20(%20WEB%20DESIGN%20COMPANY%20PUDUKKOTTAI%2C%20BULK%20SMS%20%2C%20APP%20DEVELOPMENT%2CWEB%20DEVELOPMENT%20COMPANY%20)!5e0!3m2!1sen!2sin!4v1751604991727!5m2!1sen!2sin" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -3196,7 +3523,7 @@
         </div>
 
         <!-- Contact Info -->
-        <div id="contact">
+        <div id="footer-contact">
           <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
           <ul class="space-y-2 text-gray-400">
             <li class="flex items-start">
@@ -3210,7 +3537,7 @@
             </li>
             <li class="flex items-start">
               <i class="fas fa-phone-alt mt-1 mr-3"></i>
-              <span>Landline: 04322 222268</span>
+              <span>Landline: 04339 220115</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-mobile-alt mt-1 mr-3"></i>
@@ -3250,7 +3577,15 @@
       </div>
     </div>
   </footer>
-
+<!-- Service Inquiry Button -->
+<a href="#contact" 
+   id="service-inquiry-btn"
+   class="fixed bottom-8 left-8 bg-primary hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 group">
+   <i class="fas fa-headset text-xl"></i>
+   <span class="absolute left-full ml-2 px-2 py-1 bg-blue-700 text-white text-sm rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      Service Inquiry
+   </span>
+</a>
   <!-- Back to Top Button -->
   <button id="back-to-top"
     class="fixed bottom-8 right-8 bg-primary hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible">
